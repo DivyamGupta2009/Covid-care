@@ -1,16 +1,14 @@
-<!DOCTYPE HTML>
 
 <html>
 <head>
-<title>Covid care- Cases, vaccines, top news</title>
-    <link rel = "stylesheet"
+    <title>Covid care- Cases, vaccines, top news</title>
+    <link rel="stylesheet" 
    type = "text/css"
-   href = "style.css"
-          </head>
-    
+   href = "style.css"/>
+    </head>
 <body>
-    
 <div class = "header">
+    
     <div class = "menu1">
     <a target="_blank"href = "https://www.google.com/search?q=coronavirus&rlz=1C1CHBD_enIN948IN948&oq=coro&aqs=chrome.3.69i57j0i433l4j0i433i457j0i402j69i61.3114j0j7&sourceid=chrome&ie=UTF-8#wptab=s:H4sIAAAAAAAAAONgVuLVT9c3NMwySk6OL8zJecTozS3w8sc9YSmnSWtOXmO04eIKzsgvd80rySypFNLjYoOyVLgEpVB1ajBI8XOhCvHsYmLzSSxJLS5ZxMrtnF-Un5dYlllUWgwAOiVTd3YAAAA">Top news</a><br>
 <a target="_blank"href = "precaution.html">Precautions</a><br>
@@ -18,7 +16,7 @@
     </div>
     
     
-<h1><b>Covid care</b></h1>
+<h1><b>COVID CARE</b></h1>
 <div class = "menu">
 <a target="_blank"href = "https://www.google.com/search?q=covid+testing+near+me&rlz=1C1CHBD_enIN948IN948&oq=covid+testing&aqs=chrome.0.0i433i457j69i57j0i402l2j0i433j0l5.4208j0j7&sourceid=chrome&ie=UTF-8&dlnr=1&sei=pDjGYI-LPKKhmge0krOQDQ">Testing</a><br>
 <a target="_blank"href = "treatment.html">Treatment</a><br>
@@ -33,16 +31,32 @@
         <p><i>Click <a target = "_blank"href = "https://www.cowin.gov.in/">here</a> to sign up.<hr></i></p>
     </div>
     <div class="cases">
-    <p>Click <a target = "_blank"href = "https://www.covid19india.org/">here</a> to see cases and deaths in India.</p>
-        <p>Click <a target = "_blank"href = "https://www.worldometers.info/coronavirus/">here</a> to see cases and deaths worldwide.</p>
+        <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="600px"></iframe>
+        <div class = "more">
+            <iframe src="https://ourworldindata.org/grapher/total-deaths-covid-19?country=ITA+ESP+USA" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+    
+        <p>Click <a target = "_blank"href = "https://www.worldometers.info/coronavirus/">here</a> to see cases, deaths and more worldwide.</p>
+           </script>
+            
+            <p>Click <a target = "_blank"href = "https://www.covid19india.org/">here</a> to see cases and deaths in India.</p>
+        </div>
         <button onclick = "myfunction()">Click here to check if you are having covid-19.</button>
         <p id = "demo"></p>
+        <span>
+            <p style = "text-align: center; font-size: 20;">Some videos on covid-19 awareness.</p>
+            <div class="videos">
+              <iframe id="one" width="500" height="393" src="https://www.youtube.com/embed/5DGwOJXSxqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id = "hi" width="500" height="393" src="https://www.youtube.com/embed/kZnJ-oPuYE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>   
+        </span>
+        
         <script>
-    myfunction(){
+myfunction(){
         var fever, cough, bodyache, msg;
         var fever = prompt("Are you feversish?", "yes");
         var cough = prompt("Do you have a cough?", "yes");
         var bodyache = prompt("Are you having a bodyache?", "yes");
+    console.log("Hello");
         if(fever == "yes"){
         if(cough == "yes"){
         if(bodyache == "yes"){
@@ -114,6 +128,4 @@ msg="I couldn't really catch that.";
     </div>
     </div>
     </body>
-    
 </html>
-    
