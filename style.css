@@ -1,6 +1,6 @@
 .header{
   display: flex;
-  background-color: red;
+  background-color: lightblue;
   justify-content: center; 
   align-items: center;
   border: black; 
@@ -32,11 +32,11 @@ color: dodgerblue;
     padding: 0px;
     border: solid;
     border-color: blue;
-    background-color: greenyellow;
+    background-color: darkseagreen;
     text-align: center;
 }
 .page{
-background-color: greenyellow;
+background-color: darkseagreen;
     margin: 30px;
 }
 hr{
