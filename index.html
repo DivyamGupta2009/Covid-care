@@ -6,7 +6,7 @@
     <link rel = "stylesheet"
    type = "text/css"
    href = "style.css"
-</head>
+          </head>
     
 <body>
     
@@ -38,10 +38,75 @@
         <button onclick = "myfunction()">Click here to check if you are having covid-19.</button>
         <p id = "demo"></p>
         <script>
-    function myfunctions(){
-    var fever, taste, cough, msg;
-    var fever = prompt("Are you feverish?", "yes");
-    var cough = prompt("Do you have a cough?", "yes");
+    myfunction(){
+        var fever, cough, bodyache, msg;
+        var fever = prompt("Are you feversish?", "yes");
+        var cough = prompt("Do you have a cough?", "yes");
+        var bodyache = prompt("Are you having a bodyache?", "yes");
+        if(fever == "yes"){
+        if(cough == "yes"){
+        if(bodyache == "yes"){
+        msg="You need to call a doctor (100) or the cops (101) ASAP.";
+            document.getElementById("demo").innerHTML=msg;
+        }
+            else if(bodypain == "no"){
+            msg="If you feel pukish or get a bodyache, please contact a docotr, in the meantime, please stay home.";
+            document.getElementById("demo").innerHTML=msg;
+            }
+            msg="I couldn't really catch that.";
+            document.getElementById("demo").innerHTML=msg;
+        }
+        }
+       
+        else if(cough == "no"){
+            if(bodyache == "yes"){
+                msg="Maybe the bodyache is just due to the fever, nevertheless stay home stay safe.";
+            document.getElementById("demo").innerHTML=msg;
+}  
+            else if(bodyache == "no"){
+              msg="Don't worry, it's just cough.";
+            document.getElementById("demo").innerHTML=msg;
+            }
+            else{
+msg="I couldn't really catch that.";
+            document.getElementById("demo").innerHTML=msg;
+            }
+        }
+         else if(fever == "no"){
+           if(cough == "yes"){
+               if(bodyache == "yes"){
+                  msg="Rest well. If there is no improvement in health contact a doctor.";
+            document.getElementById("demo").innerHTML=msg; 
+               }
+               else if(bodyache == "no"){
+                msg="If you feel pukish, get a bodyache or are feverish, contact a doctor. In the mean time, please stay home.";
+            document.getElementById("demo").innerHTML=msg;
+               }
+               else{
+                   msg="I couldn't really catch that.";
+            document.getElementById("demo").innerHTML=msg;
+               }           
+           }
+             
+             else if(cough == "no"){
+                 if(bodyache == "yes"){
+                       msg="Maybe the bodyache is due to exersion, nevertheless stay home stay safe.";
+            document.getElementById("demo").innerHTML=msg;
+                 }
+                 else if(bodyache == "no"){
+                       msg="You are perfectly fine..";
+            document.getElementById("demo").innerHTML=msg;
+                 }
+                 else{
+  msg="I couldn't really catch that.";
+            document.getElementById("demo").innerHTML=msg;
+                 }
+             }
+        } 
+        else{
+              msg="I couldn't really catch that..";
+            document.getElementById("demo").innerHTML=msg;
+        }
     }
         
          
